@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="app.js"></script>
+    <title>Generate My meals</title>
+
+<body>
+
+    <div class="continer">
+
+        <div class="form-control">
+            <div class="breakfastuser">
+
+                <label> اكتب وجباتك المفضلة</label>
+                <input class='firstmeal inpt' type="txt" placeholder=" 
+            وجبة الفطور : قهوة وموز ,تفاح توست  " value=" قهوة وموز ,تفاح توست">
+                <input class='secondmeal inpt' type="text" placeholder="
+            وجبة الغداء : ارز دجاج، مكرونه دجاج" value=" ارز دجاج، مكرونه دجاج ">
+                <input class='thirdmeal inpt' type="text" placeholder="   وجبة خفيفة : موز قهوة ، شاي بسكويت"
+                    value=" موز قهوة ، شاي بسكويت ">
+                <input class='fourthmeal inpt' type="text" placeholder="   وجبة العشاء : سلطة وعصير ، شوربة وخبز"
+                    value="  سلطة وعصير ، شوربة وخبز">
+
+                <div class="btnmeals">
+                    <i class="fas fa-check-circle"></i>
+                    <button class="btn_meals">حفظ وجباتي</button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr>
+        <h2>وجبة الفطور </h2>
+        <span class="breakfast">
+        </span>
+        <input class='calories_breakfast cl' type="txt" placeholder="سعرات الفطور  ">
+
+        <h2>وجبة الغدا </h2>
+        <span class="lunch"> </span>
+        <input class='calories_lunch cl' type="txt" placeholder=" سعرات الغدا">
+
+        <h2>وجبة سناك </h2>
+        <span class="snack"> </span>
+        <input class='calories_snack cl' type="txt" placeholder=" سعرات السناك">
+
+        <h2>وجبة العشا</h2>
+        <span class="dinner"> </span>
+        <input class='calories_dinner cl' type="txt" placeholder=" سعرات العشاء">
+        <br>
+        <button class="btn">خمّن وجبة اليوم </button>
+
+        <div class="askuser">
+            <label class="label1">هل تريد حساب السعرات؟ </label>
+            <div class="yesno">
+                <button class="btn_yes">نعم</button>
+                <button class="btn_no">لا</button>
+            </div>
+
+        </div>
+
+        <button class="btn_calories">احسب سعراتي لليوم </button>
+        <span class="main_totalcalorie">السعرات الكلية : <span id="totalcalorie"></span></span>
+    </div>
+
+</body>
+
+</html>
